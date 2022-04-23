@@ -10,6 +10,10 @@ A set of tweaks to make buttons easier to distinguish by drawing borders around 
 - Adds faint borders to the sidebar (the sidebar on the left)
 - Tweaked headerbar buttons
 
-Q: Does this modify the background color of buttons?
+### QA
 
-A: No, that would be a chore and would prevent me form touching grass
+Q: Does this modify the background color of buttons?\
+A: No, that would be a really big task to execute.
+
+Q: Why does this tweak exist?\
+A: My aging eyes did not like the low constrast buttons.
