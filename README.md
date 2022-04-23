@@ -11,4 +11,5 @@ A set of tweaks to make buttons easier to distinguish by drawing borders around 
 - Tweaked headerbar buttons
 
 Q: Does this modify the background color of buttons?
+
 A: No, that would be a chore and would prevent me form touching grass
