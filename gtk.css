@@ -1,0 +1,257 @@
+/*
+***********************************
+** Libadwaita Border Enhancement **
+***********************************
+*/
+/* This config adds borders and subtle shadows to buttons */
+
+/* This config excludes non-hovered or non-checked 
+flat buttons since it breaks too many things */
+
+/* No background-color tweaks too */
+
+/**********
+ * Global *
+ **********/
+
+/* global config for all buttons */
+button {
+  box-shadow: 0 0 0 1px alpha(@view_fg_color, 0.13) inset;
+}
+
+/* global config for flat buttons */
+button.flat {
+  box-shadow: none;
+}
+
+/* global config for flat hovered buttons */
+button.flat:hover {
+  box-shadow: 0 0 0 1px alpha(@view_fg_color, 0.13) inset;
+}
+
+/* global config for checked buttons */
+button:active,
+button:checked {
+  box-shadow: 0 0 2px mix(@shade_color, @dark_5, 0.07), 0 0 0 1px alpha(@view_fg_color, 0.25) inset;
+}
+
+/*****************
+ * Linked Button *
+ *****************/
+
+/* config for linked buttons */
+.linked button,
+.linked button:active,
+.linked button:checked {
+	/*box-shadow: 0 0 0 1px alpha(@view_fg_color, 0.13) inset;*/
+	box-shadow: 0 0 0 1px mix(@window_bg_color, #919191, 0.5) inset;
+}
+
+/* config for linked combo buttons */
+.linked button.combo {
+	box-shadow: 0 0 0 1px alpha(@view_fg_color, 0.13) inset;
+}
+
+.linked button.combo:active,
+.linked button.combo:checked {
+  box-shadow: 0 0 2px mix(@shade_color, @dark_5, 0.07), 0 0 0 1px alpha(@view_fg_color, 0.25) inset;
+}
+
+/* not fully tested */
+.horizontal.linked entry + button {
+	box-shadow: none;
+}
+
+/***************
+ * Menu Button *
+ ***************/
+
+modelbutton.flat {
+  box-shadow: none;
+}
+
+modelbutton.flat:hover,
+modelbutton.flat:selected,
+modelbutton.flat:hover:focus-within {
+  box-shadow: 0 0 0 1px alpha(@view_fg_color, 0.08) inset;
+}
+
+menubutton.flat button:not(:hover):not(:active):not(:checked) {
+  box-shadow: none;
+}
+
+/*************
+ * Headerbar *
+ *************/
+
+/* config for all headerbar buttons */
+headerbar button {
+  box-shadow: none;
+}
+
+/* config for hovered headerbar buttons*/
+headerbar button:hover {
+  box-shadow: 0 0 0 1px alpha(@view_fg_color, 0.13) inset;
+}
+
+/* config for checked headerbar buttons*/
+headerbar button:active,
+headerbar button:checked {
+  box-shadow: 0 0 2px mix(@shade_color, @dark_5, 0.07), 0 0 0 1px alpha(@view_fg_color, 0.25) inset;
+}
+
+/* config for linked switch headerbar buttons */
+headerbar stackswitcher.linked button {
+  box-shadow: none;
+}
+
+headerbar stackswitcher.linked button:active,
+headerbar stackswitcher.linked button:checked,
+headerbar stackswitcher.linked button:checked:hover {
+  box-shadow: 0 0 0 1px alpha(@view_fg_color, 0.13) inset;
+}
+
+/* config for switch headerbar buttons */
+headerbar viewswitcher button.flat:hover {
+  box-shadow: 0 0 0 1px alpha(@view_fg_color, 0.04) inset;
+}
+
+headerbar viewswitcher button.flat:active,
+headerbar viewswitcher button.flat:checked,
+headerbar viewswitcher button.flat:checked:hover {
+  box-shadow: 0 0 0 1px alpha(@view_fg_color, 0.13) inset;
+}
+
+/*******************
+ * Window Controls *
+ *******************/
+
+/* removes the borders from the window buttons */
+windowcontrols button.close,
+windowcontrols button.maximize,
+windowcontrols button.minimize {
+  box-shadow: none;
+}
+
+/*windowcontrols button image:not(:hover) {
+  background-color: transparent;
+}*/
+
+/**********************
+ * Navigation Sidebar *
+ **********************/
+
+/* config for navigation sidebar selected buttons */
+.navigation-sidebar > row:selected {
+  box-shadow: 0 0 0 1px alpha(@view_fg_color, 0.08) inset;
+}
+
+/***********
+ * Popover *
+ ***********/
+
+/* config for popover buttons*/
+popover list > row:hover,
+popover list > row:active {
+	box-shadow: 0 0 0 1px alpha(@view_fg_color, 0.08) inset;
+}
+
+/*********
+ * Lists *
+ *********/
+
+listview > row:hover {
+  box-shadow: 0 0 0 1px alpha(@view_fg_color, 0.08) inset;
+}
+
+/***************
+ * Spin Button *
+ ***************/
+
+/* puts borders around spinbuttons */
+spinbutton {
+  box-shadow: 0 0 0 1px alpha(@view_fg_color, 0.08) inset;
+}
+
+/* removes the borders of spinbutton buttons */
+spinbutton > button {
+  box-shadow: none;
+}
+
+/**********
+ * Dialog *
+ **********/
+
+/* remove borders from window controls */
+window.dialog.csd headerbar windowcontrols button.close {
+  box-shadow: none;
+}
+
+/* remove borders from message dialog buttons */
+window.dialog.message.csd .dialog-action-area button {
+  box-shadow: none;
+}
+
+/************
+ * Treeview *
+ ************/
+
+treeview.view header > button {
+	box-shadow: none;
+}
+
+/****************
+ * Split Button *
+ ****************/
+
+splitbutton button {
+	box-shadow: none;
+}
+
+splitbutton {
+	box-shadow: 0 0 0 1px alpha(@view_fg_color, 0.10) inset;
+}
+
+splitbutton.flat {
+	box-shadow: none;
+}
+
+splitbutton.flat:hover {
+	box-shadow: 0 0 0 1px alpha(@view_fg_color, 0.13) inset;
+}
+
+/***********
+ * Toolbar *
+ ***********/
+
+/* reset the toolbar borders */
+.horizontal.osd.toolbar button {
+	box-shadow: none;
+}
+
+.horizontal.toolbar button:not(:checked):not(:hover):not(:active) {
+	box-shadow: none;
+}
+
+/***************
+ * Card Button *
+ ***************/
+
+/* not fully tested */
+/* uses the vallues from light mode */
+button.card {
+	box-shadow: 0 0 0 1px rgba(0,0,0,0.03), 0 1px 3px 1px rgba(0,0,0,0.07), 0 2px 6px 2px rgba(0,0,0,0.03);
+}
+
+/***************
+ * Grid Button *
+ ***************/
+
+/* not fully tested */
+grid button.background-preview-button.toggle {
+	box-shadow: none;
+}
+
+grid button.background-preview-button.toggle:checked {
+	box-shadow: 0 0 0 3px @accent_color;
+}
