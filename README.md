@@ -9,7 +9,7 @@ This might improve the accessibility of the UI for some people.
 - Adds borders for hovered buttons
 - Adds subtle shadows and increases border visibility for clicked buttons
 - Adds faint borders to the sidebar row (the sidebar on the left)
-- Excludes headerbear buttons on non-active/non-hovered state from the border enhancement
+- Excludes headerbar buttons on non-active/non-hovered state from the border enhancement
 ### Install
 
 place the file under `~/.config/gtk-4.0/gtk.css`
