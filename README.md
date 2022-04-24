@@ -11,7 +11,11 @@ This might improve the accessibility of the UI for some people.
 - Adds faint borders to the sidebar row (the sidebar on the left)
 - Tweaked headerbar buttons
 
-### QA
+#### Install
+
+place the file at `~/.config/gtk-4.0/gtk.css`
+
+#### QA
 
 Q: Does this modify the background color of buttons?\
 A: No, that would be a really big task to execute.
