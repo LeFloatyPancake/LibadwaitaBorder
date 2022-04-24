@@ -13,7 +13,7 @@ This might improve the accessibility of the UI for some people.
 
 #### Install
 
-place the file at `~/.config/gtk-4.0/gtk.css`
+place the file under `~/.config/gtk-4.0/gtk.css`
 
 #### QA
 
