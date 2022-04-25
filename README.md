@@ -10,9 +10,13 @@ This might improve the accessibility of the UI for some people.
 - Adds subtle shadows and increases border visibility for clicked buttons
 - Adds faint borders to the sidebar row (the sidebar on the left)
 - Excludes headerbar buttons on non-active/non-hovered state from the border enhancement
+
 ### Install
 
 place the file under `~/.config/gtk-4.0/gtk.css`
+
+## Caveat
+The config uses `alpha()` for drawing the boders. Alpha uses trasnparency which negatively affects the performance of the system. I have not done some in-depth testing of the performance but I've seen posts online that one should avoid transparency and blur if possible to save on resources.
 
 ### QA
 
