@@ -12,6 +12,8 @@ This might improve the accessibility of the UI for some people.
 - Excludes headerbar buttons on non-active/non-hovered state from the border enhancement
 
 ### Install
+- `gtk-t` = transparent border and blurred button shadows
+- `gtk-m` = solid color borders and no button shadows
 
 place the file under `~/.config/gtk-4.0/gtk_*.css` and rename the file to `gtk.css`
 
