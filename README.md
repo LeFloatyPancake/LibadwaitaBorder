@@ -13,7 +13,7 @@ This might improve the accessibility of the UI for some people.
 
 ### Install
 
-place the file under `~/.config/gtk-4.0/gtk_*.css`
+place the file under `~/.config/gtk-4.0/gtk_*.css` and rename the file to `gtk.css`
 
 ### Caveat
 The config uses `alpha()` for drawing the boders. Alpha uses transparency which negatively affects the performance of the system. I have not done some in-depth testing of the performance but I've seen posts online that one should avoid transparency and blur if possible to save on resources.
