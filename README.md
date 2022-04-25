@@ -18,7 +18,7 @@ place the file under `~/.config/gtk-4.0/gtk.css`
 ### Caveat
 The config uses `alpha()` for drawing the boders. Alpha uses trasnparency which negatively affects the performance of the system. I have not done some in-depth testing of the performance but I've seen posts online that one should avoid transparency and blur if possible to save on resources.
 
-Taking this into consideration, I am planning to develop a separate tweak that uses `mix()` in order to avoid transparency.
+Taking this into consideration, I am planning to develop a separate tweak that uses `mix()` in order to avoid transparency. This second tweak removes both transparency and blur.
 
 ### QA
 
