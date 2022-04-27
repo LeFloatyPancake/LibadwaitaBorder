@@ -1,0 +1,221 @@
+/*
+***********************************
+** Libadwaita Border Enhancement **
+***********************************
+*/
+
+/* This config adds borders and subtle shadows to buttons */
+
+/**********
+ * Global *
+ **********/
+
+
+button.flat {
+	box-shadow: initial;
+}
+
+button,
+button.flat:hover{
+	box-shadow: 0 0 0 1px alpha(currentColor, 0.12) inset;
+}
+
+button:active,
+button:checked {
+	box-shadow: 0 0 0 1px alpha(currentColor, 0.25) inset;
+}
+
+/*****************
+ * Linked Button *
+ *****************/
+
+.linked button {
+	box-shadow: 0 0 0 1px mix(currentColor, @window_bg_color,0.75) inset;
+}
+
+.linked button:active,
+.linked button:checked {
+	box-shadow: initial;
+}
+
+.linked button.combo {
+	box-shadow: 0 0 0 1px alpha(currentColor, 0.12) inset;
+}
+
+.linked button.combo:active,
+.linked button.combo:checked {
+  box-shadow: 0 0 0 1px alpha(currentColor, 0.25) inset;
+}
+
+/* not fully tested */
+.horizontal.linked entry + button {
+	box-shadow: initial;
+}
+
+/*******************
+ * Special Buttons *
+ *******************/
+
+button.osd,
+button.opaque,
+button.suggested-action,
+button.destructive-action {
+	box-shadow: initial;
+}
+
+/***************
+ * Menu Button *
+ ***************/
+
+modelbutton.flat,
+menubutton.flat button:not(:hover):not(:active):not(:checked) {
+	box-shadow: initial;
+}
+
+modelbutton.flat:hover,
+modelbutton.flat:selected,
+modelbutton.flat:hover:focus-within {
+	box-shadow: 0 0 0 1px alpha(currentColor, 0.08) inset;
+}
+
+/*************
+ * Headerbar *
+ *************/
+
+headerbar button {
+	box-shadow: initial;
+}
+
+headerbar button:hover {
+	box-shadow: 0 0 0 1px alpha(currentColor, 0.12) inset;
+}
+
+headerbar button:active,
+headerbar button:checked {
+	box-shadow: 0 0 0 1px alpha(currentColor, 0.25) inset;
+}
+
+headerbar stackswitcher.linked button {
+	box-shadow: initial;
+}
+
+headerbar stackswitcher.linked button:active,
+headerbar stackswitcher.linked button:checked,
+headerbar stackswitcher.linked button:checked:hover {
+	box-shadow: 0 0 0 1px alpha(currentColor, 0.13) inset;
+}
+
+headerbar viewswitcher button.flat:hover {
+	box-shadow: 0 0 0 1px alpha(currentColor, 0.04) inset;
+}
+
+headerbar viewswitcher button.flat:active,
+headerbar viewswitcher button.flat:checked,
+headerbar viewswitcher button.flat:checked:hover {
+	box-shadow: 0 0 0 1px alpha(currentColor, 0.13) inset;
+}
+
+/*******************
+ * Window Controls *
+ *******************/
+
+windowcontrols button.close,
+windowcontrols button.maximize,
+windowcontrols button.minimize {
+	box-shadow: none;
+}
+
+/**********************
+ * Navigation Sidebar *
+ **********************/
+
+.navigation-sidebar > row:selected {
+	box-shadow: 0 0 0 1px alpha(currentColor, 0.08) inset;
+}
+
+/***********
+ * Popover *
+ ***********/
+
+popover list > row:hover,
+popover list > row:active {
+	box-shadow: 0 0 0 1px alpha(currentColor, 0.08) inset;
+}
+
+/*********
+ * Lists *
+ *********/
+
+listview > row:hover {
+	box-shadow: 0 0 0 1px alpha(currentColor, 0.08) inset;
+}
+
+/***************
+ * Spin Button *
+ ***************/
+
+spinbutton {
+	box-shadow: 0 0 0 1px alpha(currentColor, 0.08) inset;
+}
+
+spinbutton > button {
+	box-shadow: initial;
+}
+
+/**********
+ * Dialog *
+ **********/
+
+window.dialog.csd headerbar windowcontrols button.close {
+	box-shadow: none;
+}
+
+window.dialog.message.csd .dialog-action-area button {
+	box-shadow: none;
+}
+
+/************
+ * Treeview *
+ ************/
+
+treeview.view header > button {
+	box-shadow: initial;
+}
+
+/****************
+ * Split Button *
+ ****************/
+
+splitbutton.flat,
+splitbutton button {
+	box-shadow: initial;
+}
+
+splitbutton {
+	box-shadow: 0 0 0 1px alpha(currentColor, 0.08) inset;
+}
+
+splitbutton.flat:hover {
+	box-shadow: 0 0 0 1px alpha(currentColor, 0.13) inset;
+}
+
+/***********
+ * Toolbar *
+ ***********/
+
+.horizontal.osd.toolbar button,
+.horizontal.osd.toolbar button:hover,
+.horizontal.osd.toolbar button:active,
+.horizontal.osd.toolbar button:checked,
+.horizontal.toolbar button:not(:active):not(:checked):not(:hover) {
+	box-shadow: initial;
+}
+
+.horizontal.toolbar button:hover {
+	box-shadow: 0 0 0 1px alpha(currentColor, 0.12) inset;
+}
+
+.horizontal.toolbar button:active,
+.horizontal.toolbar button:checked {
+	box-shadow: 0 0 0 1px alpha(currentColor, 0.25) inset;
+}
