@@ -10,17 +10,13 @@
  * Basic Buttons *
  *****************/
 
-button,
-button.flat:hover {
-	box-shadow: 0 0 0 1px mix(currentColor,@window_bg_color, 0.75) inset;
-}
-
 button.flat {
 	box-shadow: initial;
 }
 
-button.flat:active {
-	box-shadow: 0 0 0 1px mix(currentColor,@window_bg_color, 0.65) inset;
+button,
+button.flat:hover {
+	box-shadow: 0 0 0 1px mix(currentColor,@window_bg_color, 0.75) inset;
 }
 
 button:active,
@@ -50,6 +46,7 @@ button:checked {
 	box-shadow: 0 0 0 1px mix(currentColor,@window_bg_color, 0.65) inset;
 }
 
+/* not fully tested */
 .horizontal.linked entry + button {
 	box-shadow: initial;
 }
@@ -151,7 +148,7 @@ spinbutton {
 }
 
 spinbutton > button {
-	box-shadow: inset;
+	box-shadow: initial;
 }
 
 /**********
@@ -180,7 +177,7 @@ treeview.view header > button {
 
 splitbutton.flat,
 splitbutton button {
-	box-shadow: inset;
+	box-shadow: initial;
 }
 
 splitbutton {
