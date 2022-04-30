@@ -1,10 +1,10 @@
 /*
-***********************************
-** Libadwaita Border Enhancement **
-***********************************
+*********************************
+* Libadwaita Border Enhancement *
+*********************************
 */
 
-/* This config adds borders and subtle shadows to buttons */
+/* This config adds borders to buttons */
 
 /**********
  * Global *
@@ -218,4 +218,16 @@ splitbutton.flat:hover {
 .horizontal.toolbar button:active,
 .horizontal.toolbar button:checked {
 	box-shadow: 0 0 0 1px alpha(currentColor, 0.25) inset;
+}
+
+/*********************
+ * Wallpaper Chooser *
+ *********************/
+
+button.background-preview-button.toggle {
+	box-shadow: initial;
+}
+
+button.background-preview-button.toggle:checked {
+	box-shadow: 0 0 0 3px @accent_color;
 }

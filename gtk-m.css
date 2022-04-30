@@ -12,20 +12,46 @@
 
 button,
 button.flat:hover {
-	box-shadow: 0 0 0 1px mix(@window_bg_color, #919191, 0.35) inset;
+	box-shadow: 0 0 0 1px mix(currentColor,@window_bg_color, 0.75) inset;
 }
 
 button.flat {
-	box-shadow: none;
+	box-shadow: initial;
 }
 
 button.flat:active {
-	box-shadow: 0 0 0 1px mix(@window_bg_color, #919191, 0.50) inset;
+	box-shadow: 0 0 0 1px mix(currentColor,@window_bg_color, 0.65) inset;
 }
 
 button:active,
 button:checked {
-	box-shadow: 0 0 0 1px mix(@window_bg_color, #919191, 0.70) inset;
+	box-shadow: 0 0 0 1px mix(currentColor,@window_bg_color, 0.65) inset;
+}
+
+/*****************
+ * Linked Button *
+ *****************/
+
+.linked button {
+	box-shadow: 0 0 0 1px mix(currentColor,@window_bg_color, 0.71) inset;
+}
+
+.linked button:active,
+.linked button:checked {
+	box-shadow: initial;
+}
+
+.linked button.combo {
+	box-shadow: 0 0 0 1px mix(currentColor,@window_bg_color, 0.77) inset;
+}
+
+.linked button.combo:active,
+.linked button.combo:checked {
+	box-shadow: 0 0 0 1px mix(currentColor,@window_bg_color, 0.65) inset;
+}
+
+.horizontal.linked entry + button {
+	box-shadow: initial;
 }
 
 /*******************
@@ -36,7 +62,7 @@ button.osd,
 button.opaque,
 button.suggested-action,
 button.destructive-action {
-	box-shadow: none;
+	box-shadow: initial;
 }
 
 /***************
@@ -45,59 +71,13 @@ button.destructive-action {
 
 modelbutton.flat,
 menubutton.flat button:not(:hover):not(:active):not(:checked) {
-	box-shadow: none;
+	box-shadow: initial;
 }
 
-modelbutton.flat:hover {
-	box-shadow: 0 0 0 1px mix(@window_bg_color, #a9a9a9, 0.40) inset;
-}
-
-/*****************
- * Linked Button *
- *****************/
-
-.linked button {
-	box-shadow: 0 0 0 1px mix(@window_bg_color, #919191, 0.35) inset;
-}
-
-.linked button:active,
-.linked button:checked {
-	box-shadow: none;
-}
-
-.linked button.combo {
-	box-shadow: 0 0 0 1px mix(@window_bg_color, #919191, 0.35) inset;
-}
-
-.linked button.combo:active,
-.linked button.combo:checked {
-	box-shadow: 0 0 0 1px mix(@window_bg_color, #919191, 0.70) inset;
-}
-
-.horizontal.linked entry + button {
-	box-shadow: none;
-}
-
-/***********
- * Toolbar *
- ***********/
-
-
-.horizontal.osd.toolbar button,
-.horizontal.osd.toolbar button:hover,
-.horizontal.osd.toolbar button:active,
-.horizontal.osd.toolbar button:checked,
-.horizontal.toolbar button:not(:active):not(:checked):not(:hover) {
-	box-shadow: none;
-}
-
-.horizontal.toolbar button:hover {
-	box-shadow: 0 0 0 1px mix(@window_bg_color, #919191, 0.35) inset;
-}
-
-.horizontal.toolbar button:active,
-.horizontal.toolbar button:checked {
-	box-shadow: 0 0 0 1px mix(@window_bg_color, #919191, 0.55) inset;
+modelbutton.flat:hover,
+modelbutton.flat:selected,
+modelbutton.flat:hover:focus-within {
+	box-shadow: 0 0 0 1px mix(currentColor,@popover_bg_color, 0.85) inset;
 }
 
 /*************
@@ -105,151 +85,26 @@ modelbutton.flat:hover {
  *************/
 
 headerbar button {
-	box-shadow: none;
+	box-shadow: initial;
 }
 
 headerbar button:hover {
-	box-shadow: 0 0 0 1px mix(@window_bg_color, #919191, 0.45) inset;
+	box-shadow: 0 0 0 1px mix(currentColor,@headerbar_bg_color, 0.80) inset;
 }
 
 headerbar button:active,
 headerbar button:checked {
-	box-shadow: 0 0 0 1px mix(@window_bg_color, #919191, 0.75) inset;
+	box-shadow: 0 0 0 1px mix(currentColor,@headerbar_bg_color, 0.70) inset;
 }
 
 headerbar viewswitcher button.flat:hover {
-	box-shadow: 0 0 0 1px mix(@window_bg_color, #919191, 0.35) inset;
+	box-shadow: 0 0 0 1px mix(currentColor,@headerbar_bg_color, 0.90) inset;
 }
 
 headerbar viewswitcher button.flat:active,
 headerbar viewswitcher button.flat:checked,
 headerbar viewswitcher button.flat:checked:hover {
-	box-shadow: 0 0 0 1px mix(@window_bg_color, #919191, 0.60) inset;
-}
-
-/***********
- * Popover *
- ***********/
-
-popover list > row:hover,
-popover list > row:active {
-	box-shadow: 0 0 0 1px mix(@window_bg_color, #a9a9a9, 0.40) inset;
-}
-
-/*********
- * Lists *
- *********/
-
-listview > row:hover {
-	box-shadow: 0 0 0 1px mix(@window_bg_color, #a9a9a9, 0.40) inset;
-}
-
-/**************
- * Boxed List *
- **************/
-
-.boxed-list button.flat {
-	box-shadow: none;
-}
-
-.boxed-list button,
-.boxed-list button.flat:hover {
-	box-shadow: 0 0 0 1px mix(@window_bg_color, #a9a9a9, 0.40) inset;
-}
-
-.boxed-list button:hover {
-	box-shadow: 0 0 0 1px mix(@window_bg_color, #a9a9a9, 0.60) inset;
-}
-
-.boxed-list button.flat:active,
-.boxed-list button.flat:checked {
-	box-shadow: 0 0 0 1px mix(@window_bg_color, #a9a9a9, 0.60) inset;
-}
-
-.boxed-list button:active,
-.boxed-list button:checked {
-	box-shadow: 0 0 0 1px mix(@window_bg_color, #a9a9a9, 0.85) inset;
-}
-
-.boxed-list .linked button {
-	box-shadow: 0 0 0 1px mix(@window_bg_color, #a9a9a9, 0.40) inset;
-}
-
-.boxed-list .linked button:active,
-.boxed-list .linked button:checked {
-	box-shadow: 0 0 0 1px mix(@window_bg_color, #a9a9a9, 0.70) inset;
-}
-
-.boxed-list spinbutton button,
-.boxed-list spinbutton button:hover,
-.boxed-list spinbutton button:active,
-.boxed-list spinbutton button:checked {
-	box-shadow: none;
-}
-
-/**********************
- * Navigation Sidebar *
- **********************/
-
-/* config for navigation sidebar selected buttons */
-.navigation-sidebar > row:selected {
-	box-shadow: 0 0 0 1px mix(@window_bg_color, #919191, 0.35) inset;
-}
-
-/***************
- * Spin Button *
- ***************/
-
-spinbutton {
-	box-shadow: 0 0 0 1px mix(@window_bg_color, #a9a9a9, 0.40) inset;
-}
-
-spinbutton > button {
-  box-shadow: none;
-}
-
-/****************
- * Split Button *
- ****************/
-
-splitbutton.flat,
-splitbutton button {
-	box-shadow: none;
-}
-
-splitbutton {
-	box-shadow: 0 0 0 1px mix(@window_bg_color, #919191, 0.20) inset;
-}
-
-splitbutton.flat:hover {
-	box-shadow: 0 0 0 1px mix(@window_bg_color, #919191, 0.35) inset;
-}
-
-splitbutton.flat button:active,
-splitbutton.flat button:checked {
-	box-shadow: 0 0 0 1px mix(@window_bg_color, #919191, 0.60) inset;
-}
-
-/***************
- * Card Button *
- ***************/
-
-/* not fully tested */
-button.card {
-	box-shadow: 0 0 0 1px rgba(0,0,0,0.03), 0 1px 3px 1px rgba(0,0,0,0.07), 0 2px 6px 2px rgba(0,0,0,0.03);
-}
-
-/***************
- * Grid Button *
- ***************/
-
-/* not fully tested */
-grid button.background-preview-button.toggle {
-	box-shadow: none;
-}
-
-grid button.background-preview-button.toggle:checked {
-	box-shadow: 0 0 0 3px @accent_color;
+	box-shadow: 0 0 0 1px mix(currentColor,@headerbar_bg_color, 0.75) inset;
 }
 
 /*******************
@@ -260,6 +115,43 @@ windowcontrols button.close,
 windowcontrols button.maximize,
 windowcontrols button.minimize {
 	box-shadow: none;
+}
+
+/**********************
+ * Navigation Sidebar *
+ **********************/
+
+.navigation-sidebar > row:selected {
+	box-shadow: 0 0 0 1px mix(currentColor,@window_bg_color, 0.82) inset;
+}
+
+/***********
+ * Popover *
+ ***********/
+
+popover list > row:hover,
+popover list > row:active {
+	box-shadow: 0 0 0 1px mix(currentColor,@popover_bg_color, 0.85) inset;
+}
+
+/*********
+ * Lists *
+ *********/
+
+listview > row:hover {
+	box-shadow: 0 0 0 1px mix(currentColor,@popover_bg_color, 0.85) inset;
+}
+
+/***************
+ * Spin Button *
+ ***************/
+
+spinbutton {
+	box-shadow: 0 0 0 1px mix(currentColor,@window_bg_color, 0.75) inset;
+}
+
+spinbutton > button {
+	box-shadow: inset;
 }
 
 /**********
@@ -279,5 +171,61 @@ window.dialog.message.csd .dialog-action-area button {
  ************/
 
 treeview.view header > button {
-	box-shadow: none;
+	box-shadow: initial;
+}
+
+/****************
+ * Split Button *
+ ****************/
+
+splitbutton.flat,
+splitbutton button {
+	box-shadow: inset;
+}
+
+splitbutton {
+	box-shadow: 0 0 0 1px mix(currentColor,@window_bg_color, 0.75) inset;
+}
+
+splitbutton.flat:hover {
+	box-shadow: 0 0 0 1px mix(currentColor,@window_bg_color, 0.80) inset;
+}
+
+splitbutton.flat button:active,
+splitbutton.flat button:checked {
+	box-shadow: 0 0 0 1px mix(currentColor,@window_bg_color, 0.75) inset;
+}
+
+/***********
+ * Toolbar *
+ ***********/
+
+.horizontal.osd.toolbar button,
+.horizontal.osd.toolbar button:hover,
+.horizontal.osd.toolbar button:active,
+.horizontal.osd.toolbar button:checked,
+.horizontal.toolbar button:not(:active):not(:checked):not(:hover) {
+	box-shadow: initial;
+}
+
+.horizontal.toolbar button:hover {
+	box-shadow: 0 0 0 1px mix(currentColor,@window_bg_color, 0.75) inset;
+}
+
+.horizontal.toolbar button:active,
+.horizontal.toolbar button:checked {
+	box-shadow: 0 0 0 1px mix(currentColor,@window_bg_color, 0.65) inset;
+}
+
+/*********************
+ * Wallpaper Chooser *
+ *********************/
+
+/* not fully tested */
+button.background-preview-button.toggle {
+	box-shadow: initial;
+}
+
+button.background-preview-button.toggle:checked {
+	box-shadow: 0 0 0 3px @accent_color;
 }
