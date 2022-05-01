@@ -1,4 +1,4 @@
-# Libadwaita Border Enhancement
+# 🧰 Libadwaita Border Enhancement
 
 > A set of tweaks to make buttons easier to distinguish by drawing borders around buttons.\
 > This might improve the accessibility of the UI for some people.
