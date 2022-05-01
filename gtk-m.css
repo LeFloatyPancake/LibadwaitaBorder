@@ -38,7 +38,7 @@ button:checked {
 }
 
 .linked button.combo {
-	box-shadow: 0 0 0 1px mix(currentColor,@window_bg_color, 0.77) inset;
+	box-shadow: 0 0 0 1px mix(currentColor,@window_bg_color, 0.75) inset;
 }
 
 .linked button.combo:active,
