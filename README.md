@@ -12,7 +12,7 @@
 - Excludes headerbar buttons on non-active/non-hovered state from the border enhancement
 
 ## ⚙️ Install
-- `gtk-t` = transparent border\
+- `gtk-t` = transparent border
 - `gtk-m` = solid color borders
 
 place the file under `~/.config/gtk-4.0/gtk_*.css` and rename the file to `gtk.css`
